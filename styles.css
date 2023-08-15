@@ -308,7 +308,28 @@ footer {
   }
   
 }
-
+@media screen and (max-width: 500px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .social-icons {
+    position: absolute;
+    top: 51%;
+    right: 60px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  
+  .social-icons img {
+    width: auto;
+    height: 22px;
+  }
+  
+}
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
